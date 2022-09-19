@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Movement : MonoBehaviour
 {
-   /*  REFERENCE VARIABLES
+    //REFERENCE VARIABLES
     PlayerInput playerInput;
     CharacterController characterController;
 
@@ -24,9 +25,6 @@ public class Movement : MonoBehaviour
     
 
     public float gravity = -9.81f;
-
-
-    public float groundedGravity = -.05f;
 
 
     //jump variables
@@ -61,7 +59,7 @@ public class Movement : MonoBehaviour
 
     void handleJump()
     {
-        if (isGrounded && isJumpPressed /*&& !isJumping){
+        if (isGrounded && isJumpPressed /*&& !isJumping*/){
            // isJumping = true;
             velocity.y = initialJumpVelocity * .5f;
         } //else if (!isJumpPressed && isGrounded && isJumping){
@@ -136,5 +134,5 @@ public class Movement : MonoBehaviour
     { 
         //deshabilita el mapa de controles del character
         playerInput.CharacterControls.Disable();
-    }*/
+    }
 }
