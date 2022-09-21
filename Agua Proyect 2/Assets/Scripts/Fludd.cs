@@ -6,12 +6,11 @@ public class Fludd : MonoBehaviour
 {
     public GameObject player;
 
-    Vector3 v3Direction;
+    public Vector3 v3Direction;
 
     public float fWater = 200;
     public float fChangePerSecond;
     public float JumpOffset = 5f;
-    public float Hover;
 
     public float fHoverTime = 3f;
 
@@ -39,6 +38,8 @@ public class Fludd : MonoBehaviour
                 player.transform.Translate(v3Direction * JumpOffset * Time.deltaTime);
 
                 //player.transform.position = new Vector3(player.transform.position.x, player.transform.position.y + JumpOffset, player.transform.position.z);
+
+                Debug.Log("yee");
             }
 
             else if (fHoverTime <= 0)
@@ -47,10 +48,6 @@ public class Fludd : MonoBehaviour
                 StartCoroutine(Wait());
             }
             
-        }
-        else if (Input.GetKey(KeyCode.J) && bInWater == false && fWater <= 0f)
-        {
-            Debug.Log("Damn");
         }
 
         if (Input.GetKey(KeyCode.K) && bInWater == true)

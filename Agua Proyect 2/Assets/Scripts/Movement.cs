@@ -12,8 +12,6 @@ public class Movement : MonoBehaviour
     public Transform groundcheck;
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
-
-
     
     // VARIABLES PARA ALMACENAR LOS VALORES DEL PLAYER INPUT
     Vector2 currentMovementInput;
@@ -22,10 +20,7 @@ public class Movement : MonoBehaviour
     bool isMovementPressed;
     bool isGrounded;
 
-    
-
     public float gravity = -9.81f;
-
 
     //jump variables
     bool isJumpPressed = false;
@@ -62,7 +57,9 @@ public class Movement : MonoBehaviour
         if (isGrounded && isJumpPressed /*&& !isJumping*/){
            // isJumping = true;
             velocity.y = initialJumpVelocity * .5f;
-        } //else if (!isJumpPressed && isGrounded && isJumping){
+        }
+        
+        //else if (!isJumpPressed && isGrounded && isJumping){
            // isJumping = false;
         //}
     }
@@ -119,9 +116,11 @@ public class Movement : MonoBehaviour
         
        handleRotation();
        characterController.Move(currentMovement * Time.deltaTime);
+
        handleJump();
        handleGravity();
-       
+        
+
     }
 
     void OnEnable()
