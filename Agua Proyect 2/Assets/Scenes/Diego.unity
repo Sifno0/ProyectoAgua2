@@ -148,7 +148,7 @@ MonoBehaviour:
   player: {fileID: 43014017}
   v3Direction: {x: 0, y: 0, z: 0}
   fWater: 200
-  fChangePerSecond: 15
+  fChangePerSecond: 0
   JumpOffset: 5
   fHoverTime: 3
   bInWater: 0
@@ -270,7 +270,7 @@ PrefabInstance:
       objectReference: {fileID: 43014024}
     - target: {fileID: 7498371371693034865, guid: f7d85450b173eac41bc545d64ce611c0, type: 3}
       propertyPath: m_Enabled
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7498371371693034865, guid: f7d85450b173eac41bc545d64ce611c0, type: 3}
       propertyPath: groundMask.m_Bits
