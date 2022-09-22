@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Fludd : MonoBehaviour
 {
+    public Movement PM;
+
     public GameObject player;
 
     public Vector3 v3Direction;
@@ -17,6 +19,7 @@ public class Fludd : MonoBehaviour
     public bool bInWater = false;
 
 
+
     void Start()
     {
         v3Direction = Vector3.up;
@@ -27,17 +30,20 @@ public class Fludd : MonoBehaviour
     {
         fWater = Mathf.Clamp(fWater, 0, 150);
 
-        if (Input.GetKey(KeyCode.J) && bInWater == false && fWater > 0)
+        if (Input.GetKey(KeyCode.J) && bInWater == false && fWater > 0 )
         {
             if (fHoverTime > 0)
             {
+                
                 fHoverTime -= Time.deltaTime;
 
                 fWater -= fChangePerSecond * Time.deltaTime;
 
-                player.transform.Translate(v3Direction * JumpOffset * Time.deltaTime);
+                //player.transform.Translate(v3Direction * JumpOffset * Time.deltaTime);
 
                 //player.transform.position = new Vector3(player.transform.position.x, player.transform.position.y + JumpOffset, player.transform.position.z);
+
+                
 
                 Debug.Log("yee");
             }

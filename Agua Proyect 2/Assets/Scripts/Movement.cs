@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 
 public class Movement : MonoBehaviour
 {
+    public Fludd fld;
+
     //REFERENCE VARIABLES
     PlayerInput playerInput;
     CharacterController characterController;
@@ -12,25 +14,25 @@ public class Movement : MonoBehaviour
     public Transform groundcheck;
     public float groundDistance = 0.4f;
     public LayerMask groundMask;
-    
+
     // VARIABLES PARA ALMACENAR LOS VALORES DEL PLAYER INPUT
     Vector2 currentMovementInput;
     Vector3 currentMovement;
-    Vector3 velocity;
+    public Vector3 velocity;
     bool isMovementPressed;
-    bool isGrounded;
+    public bool isGrounded;
 
     public float gravity = -9.81f;
 
     //jump variables
     bool isJumpPressed = false;
     float initialJumpVelocity;
-    float maxJumpHeight = 4.0f;
-    float maxJumpTime = 0.75f;
+    float maxJumpHeight = 5.0f;
+    float maxJumpTime = 0.90f;
     bool isJumping = false;
 
     //Awake se llama antes de Start en Unity
-    void Awake ()
+    void Awake()
     {
         //Pone referencias para las variables
         playerInput = new PlayerInput();
@@ -45,81 +47,94 @@ public class Movement : MonoBehaviour
         setupJumpVariables();
     }
 
-    void setupJumpVariables ()
+    void setupJumpVariables()
     {
-      float timeToApex = maxJumpTime / 2;
-      gravity = (-2 * maxJumpHeight) / Mathf.Pow(timeToApex, 2);
-      initialJumpVelocity = (2 * maxJumpHeight) / timeToApex;
+        float timeToApex = maxJumpTime / 2;
+        gravity = (-2 * maxJumpHeight) / Mathf.Pow(timeToApex, 2);
+        initialJumpVelocity = (2 * maxJumpHeight) / timeToApex;
     }
 
     void handleJump()
     {
-        if (isGrounded && isJumpPressed /*&& !isJumping*/){
-           // isJumping = true;
+        if (isGrounded && isJumpPressed) {
             velocity.y = initialJumpVelocity * .5f;
         }
-        
-        //else if (!isJumpPressed && isGrounded && isJumping){
-           // isJumping = false;
-        //}
     }
 
-    void onJump (InputAction.CallbackContext context)
+    void onJump(InputAction.CallbackContext context)
     {
-      isJumpPressed = context.ReadValueAsButton();
+        isJumpPressed = context.ReadValueAsButton();
 
     }
 
-    
+
     void handleRotation()
     {
 
         if (isMovementPressed)
         {
-         float targetAngle = Mathf.Atan2(currentMovement.x, currentMovement.z) * Mathf.Rad2Deg;
-         transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
-   
+            float targetAngle = Mathf.Atan2(currentMovement.x, currentMovement.z) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
+
         }
-        
+
 
     }
 
-    void OnMovementInput (InputAction.CallbackContext context)
+    void OnMovementInput(InputAction.CallbackContext context)
     {
-            currentMovementInput = context.ReadValue<Vector2>();
-            currentMovement.x = currentMovementInput.x * 4.0f;
-            currentMovement.z = currentMovementInput.y * 6.0f;
-            isMovementPressed = currentMovementInput.x != 0 || currentMovementInput.y != 0;
+        currentMovementInput = context.ReadValue<Vector2>();
+        currentMovement.x = currentMovementInput.x * 4.0f;
+        currentMovement.z = currentMovementInput.y * 6.0f;
+        isMovementPressed = currentMovementInput.x != 0 || currentMovementInput.y != 0;
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     void handleGravity()
     {
 
-        isGrounded = Physics.CheckSphere (groundcheck.position, groundDistance, groundMask);
-        if(isGrounded && velocity.y < 0)
+        isGrounded = Physics.CheckSphere(groundcheck.position, groundDistance, groundMask);
+        if (isGrounded && velocity.y < 0)
         {
             velocity.y = -2f;
         }
-        velocity.y += gravity * Time.deltaTime;
+
+        if (fld.fHoverTime > 0 && (Input.GetKey(KeyCode.J)))
+        {
+            
+            velocity.y +=  Time.deltaTime;
+        }
+        else 
+        {
+            velocity.y += gravity * Time.deltaTime;
+        }
+        
+        
+        
         characterController.Move (velocity * Time.deltaTime);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-       handleRotation();
-       characterController.Move(currentMovement * Time.deltaTime);
 
-       handleJump();
-       handleGravity();
-        
+        handleRotation();
+        characterController.Move(currentMovement * Time.deltaTime);
+
+        handleJump();
+
+        handleGravity();
+
+
+        if (isGrounded == true)
+        {
+            fld.fHoverTime = 3f;
+        }
 
     }
 

@@ -145,13 +145,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c837a2c2332921148941c298af9b4170, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PM: {fileID: 43014025}
   player: {fileID: 43014017}
   v3Direction: {x: 0, y: 0, z: 0}
   fWater: 200
   fChangePerSecond: 0
-  JumpOffset: 5
+  JumpOffset: 0.42
   fHoverTime: 3
   bInWater: 0
+--- !u!114 &43014025 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7498371371693034865, guid: f7d85450b173eac41bc545d64ce611c0, type: 3}
+  m_PrefabInstance: {fileID: 308870748}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43014017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e991fc269a8a1c4db10d02f01779173, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &193322294
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -265,16 +277,28 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7498371371693034865, guid: f7d85450b173eac41bc545d64ce611c0, type: 3}
+      propertyPath: fld
+      value: 
+      objectReference: {fileID: 43014024}
+    - target: {fileID: 7498371371693034865, guid: f7d85450b173eac41bc545d64ce611c0, type: 3}
       propertyPath: Fldd
       value: 
       objectReference: {fileID: 43014024}
     - target: {fileID: 7498371371693034865, guid: f7d85450b173eac41bc545d64ce611c0, type: 3}
+      propertyPath: gravity
+      value: -9.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498371371693034865, guid: f7d85450b173eac41bc545d64ce611c0, type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7498371371693034865, guid: f7d85450b173eac41bc545d64ce611c0, type: 3}
       propertyPath: groundMask.m_Bits
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7498371371693034870, guid: f7d85450b173eac41bc545d64ce611c0, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7d85450b173eac41bc545d64ce611c0, type: 3}
