@@ -56,8 +56,14 @@ public class Movement : MonoBehaviour
 
     void handleJump()
     {
-        if (isGrounded && isJumpPressed) {
+        if (isGrounded && isJumpPressed && !isJumping) {
+            isJumping = true;
+            if (!(Input.GetKey(KeyCode.J))){
             velocity.y = initialJumpVelocity * .5f;
+            }
+        } else if (!isJumpPressed && isGrounded && isJumping)
+        {
+            isJumping = false;
         }
     }
 
@@ -106,8 +112,10 @@ public class Movement : MonoBehaviour
 
         if (fld.fHoverTime > 0 && (Input.GetKey(KeyCode.J)))
         {
+            if (!isJumpPressed){
             
             velocity.y +=  Time.deltaTime;
+            }
         }
         else 
         {
