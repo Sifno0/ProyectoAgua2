@@ -110,7 +110,7 @@ public class Movement : MonoBehaviour
             velocity.y = -2f;
         }
 
-        if (fld.fHoverTime > 0 && (Input.GetKey(KeyCode.J)))
+        if (fld.fHoverTime > 0 && (Input.GetKey(KeyCode.J)) && fld.fWater > 0)
         {
             if (!isJumpPressed){
             

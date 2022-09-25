@@ -8,6 +8,9 @@ public class Fludd : MonoBehaviour
 
     public GameObject player;
 
+    public ParticleSystem particleomega;
+    public ParticleSystem particleomega2;
+
     public Vector3 v3Direction;
 
     public float fWater = 200;
@@ -30,30 +33,41 @@ public class Fludd : MonoBehaviour
     {
         fWater = Mathf.Clamp(fWater, 0, 150);
 
-        if (Input.GetKey(KeyCode.J) && bInWater == false && fWater > 0 )
+        if (Input.GetKey(KeyCode.J) && bInWater == false  )
         {
-            if (fHoverTime > 0)
+            if (fHoverTime > 0 &&  fWater > 0)
             {
                 
                 fHoverTime -= Time.deltaTime;
 
                 fWater -= fChangePerSecond * Time.deltaTime;
 
+                
+
                 //player.transform.Translate(v3Direction * JumpOffset * Time.deltaTime);
 
                 //player.transform.position = new Vector3(player.transform.position.x, player.transform.position.y + JumpOffset, player.transform.position.z);
 
-                
+
 
                 Debug.Log("yee");
             }
-
             else if (fHoverTime <= 0)
 
             {
                 StartCoroutine(Wait());
-            }
-            
+            }            
+        }
+        if (Input.GetKeyDown(KeyCode.J) && fWater > 0)
+        {
+            particleomega.Play();
+            particleomega2.Play();
+
+        }
+        else if (Input.GetKeyUp(KeyCode.J) && fWater > 0)
+        {
+            particleomega.Stop();
+            particleomega2.Stop();
         }
 
         if (Input.GetKey(KeyCode.K) && bInWater == true)
