@@ -59,7 +59,7 @@ public class Movement : MonoBehaviour
         if (isGrounded && isJumpPressed && !isJumping) {
             isJumping = true;
             if (!(Input.GetKey(KeyCode.J))){
-            velocity.y = initialJumpVelocity * .5f;
+            velocity.y = initialJumpVelocity * 0.9f;
             }
         } else if (!isJumpPressed && isGrounded && isJumping)
         {
@@ -114,7 +114,7 @@ public class Movement : MonoBehaviour
         {
             if (!isJumpPressed){
             
-            velocity.y +=  Time.deltaTime;
+            velocity.y = 4f * Time.deltaTime;
             }
         }
         else 
@@ -122,7 +122,10 @@ public class Movement : MonoBehaviour
             velocity.y += gravity * Time.deltaTime;
         }
         
-        
+        if (fld.fHoverTime > 0 && (Input.GetKey(KeyCode.J)) && fld.fWater > 0 && isJumpPressed)
+        {
+            velocity.y = 4f * Time.deltaTime;
+        }
         
         characterController.Move (velocity * Time.deltaTime);
     }
