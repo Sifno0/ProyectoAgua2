@@ -12,7 +12,7 @@ Material:
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -39,10 +39,10 @@ Material:
     m_Ints: []
     m_Floats:
     - _DistortionPower: 4
-    - _FresnelScale: 0.75
+    - _FresnelScale: 0.47
     - _GerstnerIntensity: 1
-    - _MaxTreshold: 0.5
-    - _Shininess: 200
+    - _MaxTreshold: 0.6
+    - _Shininess: 182
     - _TargetValue: 0
     - _TimeScale1: 30
     - _TimeScale2: 5
@@ -52,10 +52,10 @@ Material:
     m_Colors:
     - _AnimationDirection: {r: 1, g: 1, b: 1, a: 1}
     - _AnimationTiling: {r: 2.2, g: 2.2, b: -1.1, a: -1.1}
-    - _BaseColor: {r: 0.54, g: 0.95, b: 0.99, a: 0.5}
+    - _BaseColor: {r: 0.60754716, g: 1, b: 0.9464737, a: 0.5}
     - _BumpDirection: {r: 1, g: 1, b: -1, a: 1}
     - _BumpTiling: {r: 1, g: 1, b: -2, a: 3}
-    - _DistortParams: {r: 1, g: 1, b: 2, a: 1.15}
+    - _DistortParams: {r: 1, g: 0.5, b: 2, a: 1.15}
     - _GAmplitude: {r: 0.3, g: 0.35, b: 0.25, a: 0.25}
     - _GDirectionAB: {r: 0.3, g: 0.85, b: 0.85, a: 0.25}
     - _GDirectionCD: {r: 0.1, g: 0.9, b: 0.5, a: 0.5}
