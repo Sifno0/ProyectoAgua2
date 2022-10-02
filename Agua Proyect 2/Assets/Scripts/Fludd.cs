@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Fludd : MonoBehaviour
 {
+    public WaterIndicator WI;
+
     public Movement PM;
 
     public GameObject player;
@@ -13,7 +15,7 @@ public class Fludd : MonoBehaviour
 
     public Vector3 v3Direction;
 
-    public float fWater = 200;
+    public float fWater = 150;
     public float fChangePerSecond;
     public float JumpOffset = 5f;
 
@@ -26,11 +28,19 @@ public class Fludd : MonoBehaviour
     void Start()
     {
         v3Direction = Vector3.up;
+
+        WI.setMaxWater(fWater);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (fWater == 0)
+        {
+            particleomega.Stop();
+            particleomega2.Stop();
+        }
+
         fWater = Mathf.Clamp(fWater, 0, 150);
 
         if (Input.GetKey(KeyCode.J) && bInWater == false  )
@@ -42,7 +52,7 @@ public class Fludd : MonoBehaviour
 
                 fWater -= fChangePerSecond * Time.deltaTime;
 
-                
+                WI.SetWater(fWater);
 
                 //player.transform.Translate(v3Direction * JumpOffset * Time.deltaTime);
 
@@ -73,6 +83,8 @@ public class Fludd : MonoBehaviour
         if (Input.GetKey(KeyCode.K) && bInWater == true)
         {
             fWater += fChangePerSecond * Time.deltaTime;
+
+            WI.SetWater(fWater);
         }
     }
 

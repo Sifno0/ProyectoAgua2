@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Water
+  - Fire
+  - Interruptor
   layers:
   - Default
   - TransparentFX
@@ -12,11 +14,11 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
-  - 
-  - 
-  - 
-  - 
+  - WhatIsGround
+  - WhatIsWall
+  - WhatIsLadder
+  - WhatIsPlayer
+  - WhatIsEnemy
   - 
   - 
   - 
