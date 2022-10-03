@@ -1697,7 +1697,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 654444274}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2032585289}
+        m_TargetAssemblyTypeName: MenuPause, Assembly-CSharp
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &654444274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1901,7 +1913,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 663671557}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2032585289}
+        m_TargetAssemblyTypeName: MenuPause, Assembly-CSharp
+        m_MethodName: Resume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &663671557
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4673,7 +4697,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1632416124}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2032585289}
+        m_TargetAssemblyTypeName: MenuPause, Assembly-CSharp
+        m_MethodName: LoadMenu
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1632416124
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5129,7 +5165,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1794188738}
   m_LocalRotation: {x: -0.16348654, y: 0.09514073, z: 0.015842356, w: 0.98181945}
-  m_LocalPosition: {x: 63.33374, y: 28.816135, z: 36.43139}
+  m_LocalPosition: {x: 62.448013, y: 27.236027, z: 31.904095}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -5664,6 +5700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 36680286f6fdf3a429bd57bc6ac4e6e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pauseMenuUI: {fileID: 859734388}
 --- !u!114 &2032585290
 MonoBehaviour:
   m_ObjectHideFlags: 0

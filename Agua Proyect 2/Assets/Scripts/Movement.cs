@@ -90,7 +90,7 @@ public class Movement : MonoBehaviour
     void OnMovementInput(InputAction.CallbackContext context)
     {
         currentMovementInput = context.ReadValue<Vector2>();
-        currentMovement.x = currentMovementInput.x * 4.0f;
+        currentMovement.x = currentMovementInput.x * 6.0f;
         currentMovement.z = currentMovementInput.y * 6.0f;
         isMovementPressed = currentMovementInput.x != 0 || currentMovementInput.y != 0;
     }
