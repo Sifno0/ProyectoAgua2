@@ -328,6 +328,7 @@
 -r:"C:/Users/sebas/Documents/ENGINES/Unity/ProyectoAgua2/Agua Proyect 2/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll"
 -r:"C:/Users/sebas/Documents/ENGINES/Unity/ProyectoAgua2/Agua Proyect 2/Library/PackageCache/com.unity.testtools.codecoverage@1.0.1/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"C:/Users/sebas/Documents/ENGINES/Unity/ProyectoAgua2/Agua Proyect 2/Library/PackageCache/com.unity.visualscripting@1.7.8/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-firstpass.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Cinemachine.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/com.unity.cinemachine.editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/NavMeshComponents.ref.dll"
@@ -376,6 +377,14 @@
 "Assets/Carpeta - Diego/Health-Bar-master/Health Bar/Assets/TutorialInfo/Scripts/Readme.cs"
 "Assets/HolyShift/Scripts/CheckForStandardAssets.cs"
 "Assets/LowPolyWater_Pack/Scripts/LowPolyWater.cs"
+"Assets/SampleScenes/Menu/Scripts/MenuSceneLoader.cs"
+"Assets/SampleScenes/Menu/Scripts/PauseMenu.cs"
+"Assets/SampleScenes/Menu/Scripts/SceneAndURLLoader.cs"
+"Assets/SampleScenes/Scripts/CameraSwitch.cs"
+"Assets/SampleScenes/Scripts/LevelReset.cs"
+"Assets/SampleScenes/Scripts/ParticleSceneControls.cs"
+"Assets/SampleScenes/Scripts/PlaceTargetWithMouse.cs"
+"Assets/SampleScenes/Scripts/SlowMoButton.cs"
 "Assets/Scripts/AI/EnemyAi.cs"
 "Assets/Scripts/AI/EnemyGround.cs"
 "Assets/Scripts/CamaraFollow.cs"
@@ -386,7 +395,8 @@
 "Assets/Scripts/Player/PlayerInput.cs"
 "Assets/Scripts/Player/WaterIndicator.cs"
 "Assets/Scripts/Player/WaterStream.cs"
-"Assets/Scripts/Serialization/SerializationManager.cs"
+"Assets/Scripts/Save&Load/FinalScene.cs"
+"Assets/Scripts/Save&Load/SaveName.cs"
 -langversion:9.0
 
 /deterministic
