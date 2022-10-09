@@ -67,18 +67,24 @@ public class WaterStream : MonoBehaviour
 
         }
 
-        if (other.gameObject.tag == "Interruptor")
+        /*if (other.gameObject.tag == "Interruptor")
         {
             IA.GiveWater(fWaterGiven);
             Debug.Log("hi");
-        }
-
-        /*if (other.TryGetComponent(out Interruptor en))
-        {
-            en.GiveWater(fWaterGiven);
-            Debug.Log("hi");
         }*/
 
-        
+        if (other.TryGetComponent(out Interruptor en))
+        {
+            if (other.gameObject.tag == "Interruptor")
+            {
+                en.GiveWater(fWaterGiven);
+                Debug.Log("hi");
+            }
+            if (other.gameObject.tag == "TimerInterruptor")
+            {
+                en.GiveWatertoTimed(fWaterGiven);
+                Debug.Log("hi");
+            }
+        }     
     }
 }
