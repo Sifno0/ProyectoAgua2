@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 public class Movement : MonoBehaviour
 {
     public Fludd fld;
+    public Health health;
 
     //REFERENCE VARIABLES
     PlayerInput playerInput;
@@ -23,6 +24,7 @@ public class Movement : MonoBehaviour
     public bool isGrounded;
 
     public float gravity = -9.81f;
+    public float fHealth = 200f;
 
     //jump variables
     bool isJumpPressed = false;
@@ -45,6 +47,8 @@ public class Movement : MonoBehaviour
         playerInput.CharacterControls.Jump.canceled += onJump;
 
         setupJumpVariables();
+
+        health.setMaxHealth(fHealth);
     }
 
     void setupJumpVariables()
@@ -147,6 +151,24 @@ public class Movement : MonoBehaviour
             fld.fHoverTime = 3f;
         }
 
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            fHealth -= 20f;
+            health.SetHealth(fHealth);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Enemy")
+        {
+            fHealth -= 20f;
+            health.SetHealth(fHealth);
+        }
     }
 
     void OnEnable()

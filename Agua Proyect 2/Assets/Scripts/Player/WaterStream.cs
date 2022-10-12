@@ -85,6 +85,14 @@ public class WaterStream : MonoBehaviour
                 en.GiveWatertoTimed(fWaterGiven);
                 Debug.Log("hi");
             }
-        }     
+        }
+        if(other.TryGetComponent(out EnemyAi an))
+        {
+            an.TakeDamage(fWaterGiven);
+        }
+        if (other.TryGetComponent(out EnemyGround on))
+        {
+            on.TakeDamage(fWaterGiven);
+        }
     }
 }

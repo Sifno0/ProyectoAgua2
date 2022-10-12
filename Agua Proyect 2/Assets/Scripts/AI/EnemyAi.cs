@@ -113,7 +113,7 @@ public class EnemyAi : MonoBehaviour
             GameObject rb = Instantiate(projectile, transform.position, Quaternion.identity);
             
             rb.GetComponent<Rigidbody>().AddForce(transform.forward * 32f, ForceMode.Impulse);
-            rb.GetComponent<Rigidbody>().AddForce(transform.up * 5f, ForceMode.Impulse);
+            rb.GetComponent<Rigidbody>().AddForce(transform.up * 3f, ForceMode.Impulse);
             ///End of attack code
             ///
             Destroy(rb, 1);
@@ -123,26 +123,19 @@ public class EnemyAi : MonoBehaviour
         }
     }
 
-    
+    public void TakeDamage(float damage)
+    {
+        health -= damage;
+
+        if( health <= 0f)
+        {
+            Destroy(gameObject);
+        }
+    }
 
     private void ResetAttack()
     {
         alreadyAttacked = false;
-    }
-
-    public void TakeDamage(int damage)
-    {
-        health -= damage;
-
-        if (health <= 0)
-        {
-            Invoke(nameof(DestroyEnemy), 0.5f);
-        }
-            
-    }
-    private void DestroyEnemy()
-    {
-        
     }
 
     private void OnDrawGizmosSelected()
