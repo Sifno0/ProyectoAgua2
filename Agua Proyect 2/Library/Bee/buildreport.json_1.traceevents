@@ -1,0 +1,594 @@
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "BeeDriver" } },
+{ "pid": 0, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-2" } },
+{ "pid": 0, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 0, "tid": 1, "ts": 1665540349597009, "dur": 525993, "ph": "X", "name": "Build Player", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1665540349597041, "dur": 1841, "ph": "X", "name": "WriteBuildProgramData", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1665540349598883, "dur": 43585, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1665540349642470, "dur": 263892, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1665540349906364, "dur": 216038, "ph": "X", "name": "Run Backend", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1665540350122405, "dur": 597, "ph": "X", "name": "Finish", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1665540350123769, "dur": 10, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_name", "args": { "name": "netcorerun.dll" } },
+{ "pid": 35942, "tid": -1, "ph": "M", "name": "process_sort_index", "args": { "sort_index": "-1" } },
+{ "pid": 35942, "tid": 1, "ph": "M", "name": "thread_name", "args": { "name": "" } },
+{ "pid": 35942, "tid": 1, "ts": 1665540349759091, "dur": 127345, "ph": "X", "name": "BuildProgram", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1665540349760114, "dur": 57401, "ph": "X", "name": "BuildProgramContextConstructor", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1665540349869355, "dur": 4855, "ph": "X", "name": "OutputData.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1665540349874213, "dur": 12214, "ph": "X", "name": "Backend.Write", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1665540349874935, "dur": 10438, "ph": "X", "name": "JsonToString", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1665540349892356, "dur": 1638, "ph": "X", "name": "", "args": {} },
+{ "pid": 35942, "tid": 1, "ts": 1665540349891161, "dur": 2862, "ph": "X", "name": "Write chrome-trace events", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1665540350123838, "dur": 161, "ph": "X", "name": "buildprogram0.traceevents", "args": {} },
+{ "cat":"", "pid":12345, "tid":0, "ts":0, "ph":"M", "name":"process_name", "args": { "name":"bee_backend" } }
+,{ "pid":12345, "tid":0, "ts":1665540349991833, "dur":1094, "ph":"X", "name": "DriverInitData",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540349992940, "dur":52, "ph":"X", "name": "Tundra",  "args": { "detail":"RemoveStaleOutputs" }}
+,{ "pid":12345, "tid":0, "ts":1665540349993015, "dur":25, "ph":"X", "name": "Tundra",  "args": { "detail":"PrepareNodes" }}
+,{ "pid":12345, "tid":0, "ts":1665540349993041, "dur":610, "ph":"X", "name": "Tundra",  "args": { "detail":"BuildQueueInit" }}
+,{ "pid":12345, "tid":0, "ts":1665540349993685, "dur":614, "ph":"X", "name": "EnqueueRequestedNodes",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540349994299, "dur":2, "ph":"X", "name": "SortWorkingStack",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350108586, "dur":199, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350108785, "dur":41, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350108826, "dur":4, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350108830, "dur":83, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350108913, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350108917, "dur":7, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350108924, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350108925, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350108931, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350108932, "dur":6, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350108938, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350108939, "dur":5, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350108944, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350108946, "dur":229, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350109175, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350109178, "dur":11, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350109189, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350109191, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350109201, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350109202, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350109211, "dur":6, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350109217, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350109227, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350109230, "dur":10, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350109240, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350109242, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350109251, "dur":3, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350109254, "dur":8, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350109263, "dur":1, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350109264, "dur":9, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350109273, "dur":2, "ph":"X", "name": "JoinBuildThread",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350109275, "dur":11, "ph":"X", "name": "ThreadStateDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350109286, "dur":0, "ph":"X", "name": "SharedResourceDestroy",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350109311, "dur":2, "ph":"X", "name": "BuildQueueDestroyTail",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350109330, "dur":1575, "ph":"X", "name": "Tundra",  "args": { "detail":"Write AllBuiltNodes" }}
+,{ "pid":12345, "tid":1, "ts":1665540349993603, "dur":705, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1665540349994310, "dur":5532, "ph":"X", "name": "CheckDagSignatures",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1665540349999853, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"WriteText Library/Bee/artifacts/WinPlayerBuildProgram/Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1665540349999854, "dur":52, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1665540349999911, "dur":2, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1665540349999916, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1665540350000731, "dur":8573, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/app.info" }}
+,{ "pid":12345, "tid":1, "ts":1665540350009306, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":1, "ts":1665540350009343, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1665540350009538, "dur":9610, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Resources/unity default resources" }}
+,{ "pid":12345, "tid":1, "ts":1665540350019196, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1665540350019245, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1665540350019250, "dur":10386, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UnityWebRequestModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1665540350029685, "dur":734, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1665540350030424, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1665540350030431, "dur":4938, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.TLSModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1665540350035415, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1665540350035461, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1665540350035466, "dur":4815, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.StreamingModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1665540350040330, "dur":126, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1665540350040460, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1665540350040466, "dur":4442, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.InputLegacyModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1665540350045238, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1665540350045294, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1665540350045300, "dur":8637, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.ClusterRendererModule.dll" }}
+,{ "pid":12345, "tid":1, "ts":1665540350053990, "dur":165, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":1, "ts":1665540350054159, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1665540350054165, "dur":27173, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Services.Core.Telemetry.dll" }}
+,{ "pid":12345, "tid":1, "ts":1665540350081385, "dur":290, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/NavMeshComponentsExamples.dll" }}
+,{ "pid":12345, "tid":1, "ts":1665540350081679, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":1, "ts":1665540350081685, "dur":14593, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/NavMeshComponentsExamples.dll" }}
+,{ "pid":12345, "tid":1, "ts":1665540350096321, "dur":12286, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1665540349993644, "dur":676, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1665540349994320, "dur":5758, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1665540350000078, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1665540350000132, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1665540350021189, "dur":7949, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/2.0/web.config" }}
+,{ "pid":12345, "tid":2, "ts":1665540350029174, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1665540350029505, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1665540350029510, "dur":5221, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UNETModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1665540350034774, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1665540350034825, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1665540350034831, "dur":4887, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.SubsystemsModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1665540350039755, "dur":202, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1665540350039961, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1665540350039967, "dur":9671, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.InputModule.dll" }}
+,{ "pid":12345, "tid":2, "ts":1665540350049954, "dur":632, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1665540350050589, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1665540350050593, "dur":29610, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.VisualScripting.Core.dll" }}
+,{ "pid":12345, "tid":2, "ts":1665540350080254, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1665540350080304, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1665540350080311, "dur":7648, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.Data.DataSetExtensions.dll" }}
+,{ "pid":12345, "tid":2, "ts":1665540350088000, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":2, "ts":1665540350088074, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1665540350088080, "dur":3837, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/sharedassets1.assets" }}
+,{ "pid":12345, "tid":2, "ts":1665540350091960, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/level1" }}
+,{ "pid":12345, "tid":2, "ts":1665540350092002, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1665540350092007, "dur":1811, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/level1" }}
+,{ "pid":12345, "tid":2, "ts":1665540350093853, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":2, "ts":1665540350093890, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":2, "ts":1665540350093895, "dur":1665, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/globalgamemanagers" }}
+,{ "pid":12345, "tid":2, "ts":1665540350095625, "dur":12958, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1665540349993638, "dur":676, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1665540349994314, "dur":5789, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1665540350000103, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":3, "ts":1665540350000147, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1665540350021665, "dur":6611, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/2.0/settings.map" }}
+,{ "pid":12345, "tid":3, "ts":1665540350028326, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1665540350028380, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1665540350028388, "dur":3181, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UnityCurlModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1665540350031615, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1665540350031658, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1665540350031663, "dur":5325, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.TilemapModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1665540350037027, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1665540350037065, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1665540350037070, "dur":4649, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.ScreenCaptureModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1665540350041766, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1665540350041814, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1665540350041820, "dur":6241, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.GridModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1665540350048106, "dur":80, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1665540350048190, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1665540350048197, "dur":6555, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.AssetBundleModule.dll" }}
+,{ "pid":12345, "tid":3, "ts":1665540350054803, "dur":14148, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1665540350068955, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1665540350068961, "dur":3257, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Services.Core.Registration.dll" }}
+,{ "pid":12345, "tid":3, "ts":1665540350072265, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":3, "ts":1665540350072311, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1665540350072317, "dur":7113, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.Xml.dll" }}
+,{ "pid":12345, "tid":3, "ts":1665540350079467, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":3, "ts":1665540350079504, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":3, "ts":1665540350079509, "dur":16607, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.Data.dll" }}
+,{ "pid":12345, "tid":3, "ts":1665540350096160, "dur":12445, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1665540349993676, "dur":650, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1665540349994326, "dur":5745, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1665540350000071, "dur":171, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1665540350000245, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1665540350023996, "dur":12498, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/2.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":4, "ts":1665540350036532, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1665540350036569, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1665540350036574, "dur":5047, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.SharedInternalsModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1665540350041722, "dur":231, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1665540350041956, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1665540350041962, "dur":6529, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.HotReloadModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1665540350048540, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1665540350048592, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1665540350048599, "dur":19364, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.AndroidJNIModule.dll" }}
+,{ "pid":12345, "tid":4, "ts":1665540350068013, "dur":10688, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":4, "ts":1665540350078733, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1665540350078741, "dur":5682, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Services.Core.Device.dll" }}
+,{ "pid":12345, "tid":4, "ts":1665540350084472, "dur":674, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Assembly-CSharp-firstpass.dll" }}
+,{ "pid":12345, "tid":4, "ts":1665540350085150, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":4, "ts":1665540350085156, "dur":14516, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Assembly-CSharp-firstpass.dll" }}
+,{ "pid":12345, "tid":4, "ts":1665540350099725, "dur":8864, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1665540349993708, "dur":622, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1665540349994331, "dur":5739, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1665540350000070, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1665540350000123, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1665540350020593, "dur":8491, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":5, "ts":1665540350029263, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1665540350029314, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1665540350029319, "dur":7705, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UmbraModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1665540350037063, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1665540350037105, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1665540350037112, "dur":5603, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1665540350042761, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1665540350042810, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1665540350042816, "dur":6645, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.GameCenterModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1665540350049496, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1665540350049543, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1665540350049549, "dur":7189, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.AccessibilityModule.dll" }}
+,{ "pid":12345, "tid":5, "ts":1665540350056781, "dur":143, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1665540350056927, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1665540350056934, "dur":13399, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Services.Core.dll" }}
+,{ "pid":12345, "tid":5, "ts":1665540350070381, "dur":148, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":5, "ts":1665540350070534, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1665540350070540, "dur":866, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.RenderPipelines.Core.ShaderLibrary.dll" }}
+,{ "pid":12345, "tid":5, "ts":1665540350071448, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":5, "ts":1665540350071484, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1665540350071489, "dur":2198, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.Xml.Linq.dll" }}
+,{ "pid":12345, "tid":5, "ts":1665540350073780, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":5, "ts":1665540350073828, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1665540350073835, "dur":5068, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.ServiceModel.Internals.dll" }}
+,{ "pid":12345, "tid":5, "ts":1665540350078955, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":5, "ts":1665540350079002, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1665540350079008, "dur":4793, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.Drawing.dll" }}
+,{ "pid":12345, "tid":5, "ts":1665540350083843, "dur":159, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":5, "ts":1665540350084004, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1665540350084010, "dur":4621, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Assembly-CSharp.dll" }}
+,{ "pid":12345, "tid":5, "ts":1665540350088684, "dur":405, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":5, "ts":1665540350089093, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1665540350089098, "dur":4412, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/ScriptingAssemblies.json" }}
+,{ "pid":12345, "tid":5, "ts":1665540350093551, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":5, "ts":1665540350093596, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":5, "ts":1665540350093601, "dur":4797, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/globalgamemanagers.assets" }}
+,{ "pid":12345, "tid":5, "ts":1665540350098447, "dur":10160, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1665540349993731, "dur":604, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1665540349994336, "dur":5679, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1665540350000015, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1665540350000069, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1665540350007076, "dur":1517, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/4.0/machine.config" }}
+,{ "pid":12345, "tid":6, "ts":1665540350008636, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2.exe" }}
+,{ "pid":12345, "tid":6, "ts":1665540350008681, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1665540350008686, "dur":20714, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2.exe" }}
+,{ "pid":12345, "tid":6, "ts":1665540350029440, "dur":89, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1665540350029533, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1665540350029538, "dur":4468, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UIElementsNativeModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1665540350034048, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1665540350034097, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1665540350034103, "dur":4409, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.TextCoreFontEngineModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1665540350038550, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1665540350038592, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1665540350038597, "dur":4468, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.ParticleSystemModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1665540350043101, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1665540350043138, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1665540350043143, "dur":6368, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.DSPGraphModule.dll" }}
+,{ "pid":12345, "tid":6, "ts":1665540350049548, "dur":15349, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":6, "ts":1665540350064900, "dur":2, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1665540350064933, "dur":5362, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.VisualScripting.State.dll" }}
+,{ "pid":12345, "tid":6, "ts":1665540350070340, "dur":7775, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
+,{ "pid":12345, "tid":6, "ts":1665540350078121, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1665540350078128, "dur":3595, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.RenderPipelines.ShaderGraph.ShaderGraphLibrary.dll" }}
+,{ "pid":12345, "tid":6, "ts":1665540350081759, "dur":32, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":6, "ts":1665540350081794, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1665540350081800, "dur":7817, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/mscorlib.dll" }}
+,{ "pid":12345, "tid":6, "ts":1665540350089651, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1665540350089688, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1665540350089693, "dur":1691, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/resources.assets.resS" }}
+,{ "pid":12345, "tid":6, "ts":1665540350091422, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/level1.resS" }}
+,{ "pid":12345, "tid":6, "ts":1665540350091463, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1665540350091468, "dur":1469, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/level1.resS" }}
+,{ "pid":12345, "tid":6, "ts":1665540350092974, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/level0" }}
+,{ "pid":12345, "tid":6, "ts":1665540350093015, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":6, "ts":1665540350093020, "dur":1875, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/level0" }}
+,{ "pid":12345, "tid":6, "ts":1665540350094939, "dur":13669, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1665540349993755, "dur":584, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1665540349994339, "dur":5667, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1665540350000006, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1665540350000060, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1665540350004149, "dur":1293, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/4.0/settings.map" }}
+,{ "pid":12345, "tid":7, "ts":1665540350005475, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":7, "ts":1665540350005519, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1665540350005525, "dur":2852, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/config" }}
+,{ "pid":12345, "tid":7, "ts":1665540350008424, "dur":51, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":7, "ts":1665540350008496, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1665540350008502, "dur":2896, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/UnityCrashHandler64.exe" }}
+,{ "pid":12345, "tid":7, "ts":1665540350011442, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350011490, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1665540350011545, "dur":2015, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.WindModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350013599, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350013645, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1665540350013650, "dur":3735, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.VideoModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350017427, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350017477, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1665540350017485, "dur":1084, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.VehiclesModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350018600, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350018644, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1665540350018650, "dur":14902, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UnityWebRequestTextureModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350033605, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350033657, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1665540350033663, "dur":4770, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.TextCoreTextEngineModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350038480, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350038525, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1665540350038531, "dur":5036, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.PerformanceReportingModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350043610, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350043655, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1665540350043661, "dur":6621, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.DirectorModule.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350050324, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350050371, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1665540350050377, "dur":17788, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.VisualScripting.Antlr3.Runtime.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350068208, "dur":343, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350068554, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1665540350068560, "dur":2381, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Services.Core.Configuration.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350070978, "dur":1024, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350072006, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1665540350072011, "dur":2111, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.InputSystem.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350074167, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350074243, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1665540350074249, "dur":2055, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.Runtime.Serialization.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350076348, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350076391, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1665540350076396, "dur":1874, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.Net.Http.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350078318, "dur":54, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350078375, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1665540350078381, "dur":3337, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.EnterpriseServices.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350081754, "dur":16505, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/NavMeshComponents.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350098263, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":7, "ts":1665540350098270, "dur":1223, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/NavMeshComponents.dll" }}
+,{ "pid":12345, "tid":7, "ts":1665540350099541, "dur":9073, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1665540349993776, "dur":567, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1665540349994343, "dur":5662, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1665540350000005, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1665540350000061, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1665540350006320, "dur":29486, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/4.0/web.config" }}
+,{ "pid":12345, "tid":8, "ts":1665540350035860, "dur":40, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1665540350036173, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1665540350036179, "dur":7183, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.SpriteShapeModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1665540350043623, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1665540350043677, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1665540350043711, "dur":9234, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.CrashReportingModule.dll" }}
+,{ "pid":12345, "tid":8, "ts":1665540350052997, "dur":25872, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":8, "ts":1665540350078873, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1665540350078880, "dur":8955, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Services.Core.Threading.dll" }}
+,{ "pid":12345, "tid":8, "ts":1665540350087879, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1665540350087920, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":8, "ts":1665540350087925, "dur":20581, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/sharedassets1.assets.resS" }}
+,{ "pid":12345, "tid":8, "ts":1665540350108546, "dur":1, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"Player" }}
+,{ "pid":12345, "tid":8, "ts":1665540350108548, "dur":0, "ph":"X", "name": "OutputFilesMissingFor",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1665540349993806, "dur":543, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1665540349994349, "dur":5613, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1665540349999962, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":9, "ts":1665540350000005, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1665540350004356, "dur":1256, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/4.0/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":9, "ts":1665540350005658, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":9, "ts":1665540350005706, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1665540350005712, "dur":17185, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/browscap.ini" }}
+,{ "pid":12345, "tid":9, "ts":1665540350022937, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1665540350022985, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1665540350022991, "dur":6519, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UnityTestProtocolModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1665540350029558, "dur":34, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1665540350029596, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1665540350029601, "dur":7459, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UIElementsModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1665540350037097, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1665540350037138, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1665540350037143, "dur":7352, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.ProfilerModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1665540350044751, "dur":55, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1665540350044809, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1665540350044816, "dur":7864, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.CoreModule.dll" }}
+,{ "pid":12345, "tid":9, "ts":1665540350052730, "dur":469, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":9, "ts":1665540350053203, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1665540350053208, "dur":26092, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.TextMeshPro.dll" }}
+,{ "pid":12345, "tid":9, "ts":1665540350079341, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":9, "ts":1665540350079397, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":9, "ts":1665540350079403, "dur":16074, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.dll" }}
+,{ "pid":12345, "tid":9, "ts":1665540350095526, "dur":13058, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1665540349993829, "dur":524, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1665540349994353, "dur":5589, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1665540349999942, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":10, "ts":1665540349999995, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1665540350003254, "dur":3868, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":10, "ts":1665540350007170, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":10, "ts":1665540350007218, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1665540350007222, "dur":27513, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/UnityPlayer.dll" }}
+,{ "pid":12345, "tid":10, "ts":1665540350034787, "dur":50, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1665540350034840, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1665540350034846, "dur":5702, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.SubstanceModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1665540350040592, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1665540350040642, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1665540350040648, "dur":7943, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.IMGUIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1665540350048630, "dur":251, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1665540350048885, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1665540350048890, "dur":7082, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.AIModule.dll" }}
+,{ "pid":12345, "tid":10, "ts":1665540350056020, "dur":22235, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":10, "ts":1665540350078259, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1665540350078266, "dur":4807, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Services.Core.Environments.dll" }}
+,{ "pid":12345, "tid":10, "ts":1665540350083118, "dur":377, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Cinemachine.dll" }}
+,{ "pid":12345, "tid":10, "ts":1665540350083498, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1665540350083504, "dur":4695, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Cinemachine.dll" }}
+,{ "pid":12345, "tid":10, "ts":1665540350088243, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":10, "ts":1665540350088293, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":10, "ts":1665540350088298, "dur":9177, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/sharedassets0.assets.resS" }}
+,{ "pid":12345, "tid":10, "ts":1665540350097520, "dur":11100, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1665540349993867, "dur":490, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1665540349994357, "dur":5574, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1665540349999931, "dur":61, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":11, "ts":1665540349999996, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1665540350003253, "dur":3700, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/4.5/machine.config" }}
+,{ "pid":12345, "tid":11, "ts":1665540350006991, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":11, "ts":1665540350007039, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1665540350008084, "dur":11451, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/EmbedRuntime/mono-2.0-bdwgc.dll" }}
+,{ "pid":12345, "tid":11, "ts":1665540350019577, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1665540350019612, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1665540350019617, "dur":10009, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UnityWebRequestAudioModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1665540350029668, "dur":1048, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":11, "ts":1665540350030719, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1665540350030725, "dur":6397, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UI.dll" }}
+,{ "pid":12345, "tid":11, "ts":1665540350037152, "dur":33, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1665540350037188, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1665540350037192, "dur":6192, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.PhysicsModule.dll" }}
+,{ "pid":12345, "tid":11, "ts":1665540350043475, "dur":53, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":11, "ts":1665540350043558, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1665540350043564, "dur":6312, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.dll" }}
+,{ "pid":12345, "tid":11, "ts":1665540350049916, "dur":468, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":11, "ts":1665540350050387, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1665540350050393, "dur":18236, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.VisualScripting.Flow.dll" }}
+,{ "pid":12345, "tid":11, "ts":1665540350068676, "dur":142, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":11, "ts":1665540350068822, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1665540350068828, "dur":12314, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Services.Core.Analytics.dll" }}
+,{ "pid":12345, "tid":11, "ts":1665540350081185, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":11, "ts":1665540350081235, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":11, "ts":1665540350081240, "dur":14936, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Newtonsoft.Json.dll" }}
+,{ "pid":12345, "tid":11, "ts":1665540350096218, "dur":12388, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1665540349993886, "dur":476, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1665540349994362, "dur":5542, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1665540349999904, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":12, "ts":1665540349999952, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1665540350003292, "dur":6646, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/4.5/settings.map" }}
+,{ "pid":12345, "tid":12, "ts":1665540350009980, "dur":46, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1665540350010029, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1665540350010557, "dur":1021, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.XRModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1665540350011616, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1665540350011654, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1665540350011659, "dur":1495, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.VRModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1665540350013195, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1665540350013241, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1665540350013247, "dur":2998, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.VirtualTexturingModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1665540350016301, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1665540350016351, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1665540350016359, "dur":1929, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.VFXModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1665540350018328, "dur":92, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1665540350018423, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1665540350018429, "dur":15941, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UnityWebRequestWWWModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1665540350034412, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1665540350034456, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1665540350034462, "dur":5260, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.TerrainModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1665540350039755, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1665540350039803, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1665540350039809, "dur":5069, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.JSONSerializeModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1665540350045420, "dur":49, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1665540350045472, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1665540350045477, "dur":6631, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.ClusterInputModule.dll" }}
+,{ "pid":12345, "tid":12, "ts":1665540350052154, "dur":227, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":12, "ts":1665540350052385, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1665540350052391, "dur":27960, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Timeline.dll" }}
+,{ "pid":12345, "tid":12, "ts":1665540350080391, "dur":143, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":12, "ts":1665540350080538, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":12, "ts":1665540350080574, "dur":15257, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.Configuration.dll" }}
+,{ "pid":12345, "tid":12, "ts":1665540350095881, "dur":12707, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1665540349993915, "dur":451, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1665540349994366, "dur":5481, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1665540349999853, "dur":64, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":13, "ts":1665540349999920, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1665540350002782, "dur":2293, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/mconfig/config.xml" }}
+,{ "pid":12345, "tid":13, "ts":1665540350005122, "dur":45, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":13, "ts":1665540350005242, "dur":132, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1665540350005784, "dur":16128, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx" }}
+,{ "pid":12345, "tid":13, "ts":1665540350021954, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1665540350021996, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1665540350022001, "dur":7240, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UnityWebRequestAssetBundleModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1665540350029288, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1665540350029332, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1665540350029338, "dur":9714, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UIModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1665540350039088, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1665540350039135, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1665540350039141, "dur":9204, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.NVIDIAModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1665540350048397, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1665540350048441, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1665540350048446, "dur":7230, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.AnimationModule.dll" }}
+,{ "pid":12345, "tid":13, "ts":1665540350055720, "dur":171, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":13, "ts":1665540350055894, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1665540350055901, "dur":25309, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Services.Core.Internal.dll" }}
+,{ "pid":12345, "tid":13, "ts":1665540350081263, "dur":48, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":13, "ts":1665540350081315, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1665540350081320, "dur":6403, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/netstandard.dll" }}
+,{ "pid":12345, "tid":13, "ts":1665540350087764, "dur":52, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":13, "ts":1665540350087819, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1665540350087886, "dur":2479, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Resources/unity_builtin_extra" }}
+,{ "pid":12345, "tid":13, "ts":1665540350090407, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/resources.assets" }}
+,{ "pid":12345, "tid":13, "ts":1665540350090449, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1665540350090454, "dur":3939, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/resources.assets" }}
+,{ "pid":12345, "tid":13, "ts":1665540350094452, "dur":2933, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/boot.config" }}
+,{ "pid":12345, "tid":13, "ts":1665540350097389, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":13, "ts":1665540350097396, "dur":1761, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/boot.config" }}
+,{ "pid":12345, "tid":13, "ts":1665540350099188, "dur":9423, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1665540349993936, "dur":434, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1665540349994370, "dur":5763, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1665540350000134, "dur":88, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":14, "ts":1665540350000226, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1665540350023247, "dur":5696, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/2.0/machine.config" }}
+,{ "pid":12345, "tid":14, "ts":1665540350028984, "dur":477, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1665540350029464, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1665540350029470, "dur":6811, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UnityConnectModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1665540350036374, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1665540350036424, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1665540350036431, "dur":4456, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.SpriteMaskModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1665540350040940, "dur":43, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1665540350040986, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1665540350041014, "dur":7067, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.ImageConversionModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1665540350048119, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1665540350048159, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1665540350048164, "dur":5779, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.ARModule.dll" }}
+,{ "pid":12345, "tid":14, "ts":1665540350053994, "dur":14390, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":14, "ts":1665540350068389, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1665540350068399, "dur":2289, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Services.Core.Scheduler.dll" }}
+,{ "pid":12345, "tid":14, "ts":1665540350070731, "dur":429, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":14, "ts":1665540350071189, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1665540350071194, "dur":1628, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.RenderPipelines.Core.Runtime.dll" }}
+,{ "pid":12345, "tid":14, "ts":1665540350072856, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":14, "ts":1665540350072894, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1665540350072900, "dur":968, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.Transactions.dll" }}
+,{ "pid":12345, "tid":14, "ts":1665540350073909, "dur":39, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":14, "ts":1665540350073952, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1665540350073957, "dur":1320, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.Security.dll" }}
+,{ "pid":12345, "tid":14, "ts":1665540350075336, "dur":38, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":14, "ts":1665540350075377, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1665540350075383, "dur":1243, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.Numerics.dll" }}
+,{ "pid":12345, "tid":14, "ts":1665540350076671, "dur":47, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":14, "ts":1665540350076721, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1665540350076728, "dur":1056, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.IO.Compression.FileSystem.dll" }}
+,{ "pid":12345, "tid":14, "ts":1665540350077826, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":14, "ts":1665540350077870, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1665540350077876, "dur":2334, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.IO.Compression.dll" }}
+,{ "pid":12345, "tid":14, "ts":1665540350080262, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":14, "ts":1665540350080309, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1665540350080315, "dur":5627, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.Core.dll" }}
+,{ "pid":12345, "tid":14, "ts":1665540350085985, "dur":134, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":14, "ts":1665540350086123, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1665540350086616, "dur":2129, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/StreamingAssets/UnityServicesProjectConfiguration.json" }}
+,{ "pid":12345, "tid":14, "ts":1665540350088785, "dur":6222, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":14, "ts":1665540350095011, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":14, "ts":1665540350095019, "dur":2228, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/RuntimeInitializeOnLoads.json" }}
+,{ "pid":12345, "tid":14, "ts":1665540350097293, "dur":11322, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1665540349993962, "dur":412, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1665540349994374, "dur":5475, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1665540349999853, "dur":75, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":15, "ts":1665540349999932, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1665540350004206, "dur":2632, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/4.5/Browsers/Compat.browser" }}
+,{ "pid":12345, "tid":15, "ts":1665540350006881, "dur":44, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":15, "ts":1665540350006929, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1665540350008037, "dur":25990, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/EmbedRuntime/MonoPosixHelper.dll" }}
+,{ "pid":12345, "tid":15, "ts":1665540350034068, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1665540350034112, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1665540350034117, "dur":3633, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.TerrainPhysicsModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1665540350037788, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1665540350037828, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1665540350037834, "dur":4721, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.Physics2DModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1665540350042591, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1665540350042631, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1665540350042637, "dur":5418, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.GIModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1665540350048094, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1665540350048133, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1665540350048138, "dur":7727, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.AudioModule.dll" }}
+,{ "pid":12345, "tid":15, "ts":1665540350055909, "dur":8209, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":15, "ts":1665540350064126, "dur":3, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1665540350064138, "dur":16953, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Services.Core.Environments.Internal.dll" }}
+,{ "pid":12345, "tid":15, "ts":1665540350081154, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":15, "ts":1665540350081200, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1665540350081205, "dur":7332, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/System.ComponentModel.Composition.dll" }}
+,{ "pid":12345, "tid":15, "ts":1665540350088582, "dur":42, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":15, "ts":1665540350088627, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1665540350088634, "dur":3544, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/sharedassets0.assets" }}
+,{ "pid":12345, "tid":15, "ts":1665540350092217, "dur":37, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/level0.resS" }}
+,{ "pid":12345, "tid":15, "ts":1665540350092257, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":15, "ts":1665540350092262, "dur":2806, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/level0.resS" }}
+,{ "pid":12345, "tid":15, "ts":1665540350095118, "dur":13464, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1665540349993986, "dur":393, "ph":"X", "name": "FirstLock",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1665540349994379, "dur":5471, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1665540349999853, "dur":310, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":16, "ts":1665540350000165, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1665540350022659, "dur":6419, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/MonoBleedingEdge/etc/mono/4.5/web.config" }}
+,{ "pid":12345, "tid":16, "ts":1665540350029126, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1665540350029170, "dur":0, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1665540350029176, "dur":3018, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.UnityAnalyticsModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1665540350032236, "dur":41, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1665540350032280, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1665540350032286, "dur":7016, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.TextRenderingModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1665540350039352, "dur":35, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1665540350039390, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1665540350039395, "dur":7964, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.LocalizationModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1665540350047406, "dur":36, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1665540350047445, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1665540350047451, "dur":7601, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/UnityEngine.ClothModule.dll" }}
+,{ "pid":12345, "tid":16, "ts":1665540350055096, "dur":128, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":16, "ts":1665540350055228, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1665540350055233, "dur":27389, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Unity.Services.Core.Networking.dll" }}
+,{ "pid":12345, "tid":16, "ts":1665540350082700, "dur":1579, "ph":"X", "name": "CheckInputSignature",  "args": { "detail":"CopyFiles C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":16, "ts":1665540350084283, "dur":1, "ph":"X", "name": "StoreTimestampsOfNonGeneratedInputFiles",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":16, "ts":1665540350084290, "dur":14955, "ph":"X", "name": "CopyFiles",  "args": { "detail":"C:/Users/sebas/Documents/ENGINES/Agua Proyect 2_Data/Managed/Mono.Security.dll" }}
+,{ "pid":12345, "tid":16, "ts":1665540350099303, "dur":9309, "ph":"X", "name": "WaitingForWork", "cname":"thread_state_sleeping",  "args": { "detail":"" }}
+,{ "pid":12345, "tid":0, "ts":1665540350112433, "dur":1866, "ph":"X", "name": "ProfilerWriteOutput" }
+,{ "pid": 0, "tid": 1, "ts": 1665540350124055, "dur": 3496, "ph": "X", "name": "backend_profiler1.traceevents", "args": {} },
+{ "pid": 0, "tid": 1, "ts": 1665540350123759, "dur": 3822, "ph": "X", "name": "Write chrome-trace events", "args": {} },
