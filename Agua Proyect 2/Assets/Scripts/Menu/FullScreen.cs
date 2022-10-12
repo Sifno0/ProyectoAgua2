@@ -45,12 +45,12 @@ public class FullScreen : MonoBehaviour
         List<string> options = new List<string>();
         int resolucionActual = 0;
 
-        for (int i = 0; i < resolution.Lenght; i++)
+        for (int i = 0; i < resolution.Length; i++)
         {
-            string option = resolution[i].width + "x" + resolution[i].height;
+            string option = resolution[i].width + " x " + resolution[i].height;
             options.Add(option);
 
-            if (Screen.fullScreen && resolution[i].width == Screen.currentResolution.width && resolution[i].height == Screen.currentResolution.height)
+            if (resolution[i].width == Screen.currentResolution.width && resolution[i].height == Screen.currentResolution.height)
             {
                 resolucionActual = i;
             }
@@ -67,6 +67,6 @@ public class FullScreen : MonoBehaviour
         PlayerPrefs.SetInt("numeroResolucion", resolutionDropdown.value);
 
         Resolution resolucion = resolution[ResolutionIndex];
-        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+        Screen.SetResolution(resolucion.width, resolucion.height, Screen.fullScreen);
     }
 }

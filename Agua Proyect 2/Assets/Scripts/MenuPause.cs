@@ -40,7 +40,7 @@ public class MenuPause : MonoBehaviour
     public void LoadMenu()
     {
         Time.timeScale = 1f;
-        Debug.Log ("Quitting game...");
+       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
     }
 
     public void Quit()
