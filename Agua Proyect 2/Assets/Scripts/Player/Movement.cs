@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class Movement : MonoBehaviour
 {
+    private GameMaster gm;
+
     public Fludd fld;
     public Health health;
 
@@ -49,6 +52,8 @@ public class Movement : MonoBehaviour
         setupJumpVariables();
 
         health.setMaxHealth(fHealth);
+
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
     }
 
     void setupJumpVariables()
@@ -151,6 +156,11 @@ public class Movement : MonoBehaviour
             fld.fHoverTime = 3f;
         }
 
+        if(fHealth <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -168,6 +178,10 @@ public class Movement : MonoBehaviour
         {
             fHealth -= 20f;
             health.SetHealth(fHealth);
+        }
+        if (other.gameObject.tag == "Out")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
     }
 

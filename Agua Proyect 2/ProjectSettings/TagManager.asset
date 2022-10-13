@@ -9,6 +9,8 @@ TagManager:
   - Interruptor
   - TimerInterruptor
   - Enemy
+  - GM
+  - Out
   layers:
   - Default
   - TransparentFX

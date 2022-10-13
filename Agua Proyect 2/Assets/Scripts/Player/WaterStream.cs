@@ -86,7 +86,15 @@ public class WaterStream : MonoBehaviour
                 Debug.Log("hi");
             }
         }
-        if(other.TryGetComponent(out EnemyAi an))
+        if (other.TryGetComponent(out Interruptor2 pn))
+        {
+            if (other.gameObject.tag == "Interruptor")
+            {
+                pn.GiveWater(fWaterGiven);
+                Debug.Log("hi");
+            }
+        }
+        if (other.TryGetComponent(out EnemyAi an))
         {
             an.TakeDamage(fWaterGiven);
         }

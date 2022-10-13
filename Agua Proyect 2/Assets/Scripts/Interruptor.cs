@@ -18,6 +18,8 @@ public class Interruptor : MonoBehaviour
     public GameObject GOb;
     public GameObject CanvasTimer;
 
+    public bool onetime = false;
+
 
     private void Start()
     {
@@ -28,8 +30,14 @@ public class Interruptor : MonoBehaviour
     {
         if (fFireInContainer <= 0)
         {
-            GOa.SetActive(false);
-            GOb.SetActive(false);
+            /*if (!onetime)
+            {
+                ToogleGame(GOa);
+                onetime = true;
+            }*/
+
+            GOa.SetActive(true);
+            GOb.SetActive(true);
 
             materialB.material.color = Color.blue;
         }
@@ -54,6 +62,12 @@ public class Interruptor : MonoBehaviour
                 StartCoroutine(Wait());
             }
         }
+    }
+
+    public void ToogleGame(GameObject GameObjToogle)
+    {
+        GameObjToogle.SetActive(!GameObjToogle.activeSelf);
+        GOb.SetActive(GameObjToogle.activeSelf);
     }
 
     IEnumerator Wait()
