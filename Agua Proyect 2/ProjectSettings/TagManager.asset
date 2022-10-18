@@ -11,6 +11,9 @@ TagManager:
   - Enemy
   - GM
   - Out
+  - Check
+  - Dash
+  - Fludish
   layers:
   - Default
   - TransparentFX

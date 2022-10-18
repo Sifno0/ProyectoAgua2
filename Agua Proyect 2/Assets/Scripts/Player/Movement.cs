@@ -7,9 +7,12 @@ using UnityEngine.SceneManagement;
 public class Movement : MonoBehaviour
 {
     private GameMaster gm;
-
     public Fludd fld;
     public Health health;
+    public bool canDash = true;
+    private bool haveFluud = false;
+
+    public GameObject script;
 
     //REFERENCE VARIABLES
     PlayerInput playerInput;
@@ -36,6 +39,15 @@ public class Movement : MonoBehaviour
     float maxJumpTime = 0.90f;
     bool isJumping = false;
 
+    void Start()
+    {
+        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+        script = GameObject.Find("Player test 1");
+        characterController.enabled = false;
+        characterController.transform.position = gm.LastCheckPointPos;
+        characterController.enabled = true;
+    }
+
     //Awake se llama antes de Start en Unity
     void Awake()
     {
@@ -51,9 +63,7 @@ public class Movement : MonoBehaviour
 
         setupJumpVariables();
 
-        health.setMaxHealth(fHealth);
-
-        gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
+        health.setMaxHealth(fHealth);    
     }
 
     void setupJumpVariables()
@@ -79,21 +89,16 @@ public class Movement : MonoBehaviour
     void onJump(InputAction.CallbackContext context)
     {
         isJumpPressed = context.ReadValueAsButton();
-
     }
 
 
     void handleRotation()
     {
-
         if (isMovementPressed)
         {
             float targetAngle = Mathf.Atan2(currentMovement.x, currentMovement.z) * Mathf.Rad2Deg;
             transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
-
         }
-
-
     }
 
     void OnMovementInput(InputAction.CallbackContext context)
@@ -105,10 +110,7 @@ public class Movement : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+    
 
     void handleGravity()
     {
@@ -119,7 +121,7 @@ public class Movement : MonoBehaviour
             velocity.y = -2f;
         }
 
-        if (fld.fHoverTime > 0 && (Input.GetKey(KeyCode.J)) && fld.fWater > 0)
+        if (fld.fHoverTime > 0 && (Input.GetKey(KeyCode.J)) && fld.fWater > 0 && haveFluud == true)
         {
             if (!isJumpPressed){
             
@@ -131,7 +133,7 @@ public class Movement : MonoBehaviour
             velocity.y += gravity * Time.deltaTime;
         }
         
-        if (fld.fHoverTime > 0 && (Input.GetKey(KeyCode.J)) && fld.fWater > 0 && isJumpPressed)
+        if (fld.fHoverTime > 0 && (Input.GetKey(KeyCode.J)) && fld.fWater > 0 && isJumpPressed && haveFluud == true)
         {
             velocity.y = 4f * Time.deltaTime;
         }
@@ -159,6 +161,7 @@ public class Movement : MonoBehaviour
         if(fHealth <= 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            
         }
 
     }
@@ -179,9 +182,29 @@ public class Movement : MonoBehaviour
             fHealth -= 20f;
             health.SetHealth(fHealth);
         }
+       
         if (other.gameObject.tag == "Out")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            fHealth -= 20f;
+            health.SetHealth(fHealth);
+            characterController.enabled = false;
+            characterController.transform.position = gm.LastCheckPointPos;
+            characterController.enabled = true;
+
+        }
+        if (other.gameObject.tag == "Dash")
+        {
+            Debug.Log("Dashin");
+            currentMovement.z = currentMovementInput.y * 30.0f;
+            currentMovement.x = currentMovementInput.x * 30.0f;
+            
+        }
+        if (other.gameObject.tag == "Fludish")
+        {
+            script.GetComponent<Fludd>().enabled = true;
+            haveFluud = true;
+            Destroy(other.gameObject);
+
         }
     }
 

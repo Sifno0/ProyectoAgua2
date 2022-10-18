@@ -14592,7 +14592,7 @@ GameObject:
   - component: {fileID: 4068916910742671856}
   m_Layer: 9
   m_Name: Player test 1
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14714,6 +14714,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fld: {fileID: 4068916910742671856}
+  health: {fileID: 0}
   groundcheck: {fileID: 4068916910436155001}
   groundDistance: 0.4
   groundMask:
@@ -14722,6 +14723,7 @@ MonoBehaviour:
   velocity: {x: 0, y: 0, z: 0}
   isGrounded: 0
   gravity: -9.81
+  fHealth: 200
 --- !u!114 &4068916910742671856
 MonoBehaviour:
   m_ObjectHideFlags: 0
