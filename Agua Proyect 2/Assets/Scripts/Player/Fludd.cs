@@ -82,7 +82,6 @@ public class Fludd : MonoBehaviour
 
         if (Input.GetKey(KeyCode.K) && bInWater == true)
         {
-            fWater += fChangePerSecond * Time.deltaTime;
 
             WI.SetWater(fWater);
         }

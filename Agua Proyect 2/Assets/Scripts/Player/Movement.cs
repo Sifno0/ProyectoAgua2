@@ -12,6 +12,9 @@ public class Movement : MonoBehaviour
     public bool canDash = true;
     private bool haveFluud = false;
 
+    public bool canRun = false;
+    private float run = 0f;
+
     public GameObject script;
 
     //REFERENCE VARIABLES
@@ -103,10 +106,25 @@ public class Movement : MonoBehaviour
 
     void OnMovementInput(InputAction.CallbackContext context)
     {
-        currentMovementInput = context.ReadValue<Vector2>();
-        currentMovement.x = currentMovementInput.x * 6.0f;
-        currentMovement.z = currentMovementInput.y * 6.0f;
-        isMovementPressed = currentMovementInput.x != 0 || currentMovementInput.y != 0;
+
+        
+
+        if (canRun == true)
+        {
+            currentMovementInput = context.ReadValue<Vector2>();
+            currentMovement.x = currentMovementInput.x * 12.0f;
+            currentMovement.z = currentMovementInput.y * 12.0f;
+            isMovementPressed = currentMovementInput.x != 0 || currentMovementInput.y != 0;
+        }
+        else
+        {
+            currentMovementInput = context.ReadValue<Vector2>();
+            currentMovement.x = currentMovementInput.x * 6.0f;
+            currentMovement.z = currentMovementInput.y * 6.0f;
+            isMovementPressed = currentMovementInput.x != 0 || currentMovementInput.y != 0;
+        }
+       
+        
     }
 
     // Start is called before the first frame update
@@ -164,6 +182,32 @@ public class Movement : MonoBehaviour
             
         }
 
+        if (Input.GetKey(KeyCode.K) && fld.bInWater == true)
+        {
+            fld.fWater += fld.fChangePerSecond * Time.deltaTime;
+
+            fld.WI.SetWater(fld.fWater);
+        }
+
+        
+
+        if (run > 3.5f)
+        {
+            canRun = true;
+        }
+        if(!Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.A) && !Input.GetKey(KeyCode.S) && !Input.GetKey(KeyCode.D))
+        {
+            canRun = false;
+
+            run = 0f;
+        }
+        if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+        {
+            run += Time.deltaTime;
+        }
+
+        
+
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -208,6 +252,12 @@ public class Movement : MonoBehaviour
         }
     }
 
+    IEnumerator Wait()
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        
+    }
     void OnEnable()
     {
         // habilita el mapa de controles del character
