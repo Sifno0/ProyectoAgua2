@@ -12,6 +12,7 @@ public class Fludd : MonoBehaviour
 
     public ParticleSystem particleomega;
     public ParticleSystem particleomega2;
+    
 
     public Vector3 v3Direction;
 
@@ -72,12 +73,14 @@ public class Fludd : MonoBehaviour
         {
             particleomega.Play();
             particleomega2.Play();
+            
 
         }
         else if (Input.GetKeyUp(KeyCode.J) && fWater > 0)
         {
             particleomega.Stop();
             particleomega2.Stop();
+            
         }
 
         if (Input.GetKey(KeyCode.K) && bInWater == true)

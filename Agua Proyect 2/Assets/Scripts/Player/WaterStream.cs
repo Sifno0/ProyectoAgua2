@@ -7,6 +7,8 @@ public class WaterStream : MonoBehaviour
     public Interruptor IA;
 
     public ParticleSystem particleSus;
+    public ParticleSystem splash;
+    public GameObject parCollision;
 
     public Fludd fld;
 
@@ -29,6 +31,7 @@ public class WaterStream : MonoBehaviour
 
         if (fld.fWater == 0)
         {
+            splash.Stop();
             particleSus.Stop();
         }
 
@@ -36,6 +39,7 @@ public class WaterStream : MonoBehaviour
         {
             if (fld.fWater > 0)
             {
+                splash.Play();
                 particleSus.Play();
                 ifHBeingPressed = true;
 
@@ -44,7 +48,8 @@ public class WaterStream : MonoBehaviour
         else if (Input.GetKeyUp(KeyCode.H))
         {
              particleSus.Stop();
-             ifHBeingPressed = false;
+             splash.Stop();
+            ifHBeingPressed = false;
         }
         
 
@@ -64,7 +69,7 @@ public class WaterStream : MonoBehaviour
 
         for (int i = 0; i < events; i++)
         {
-
+            Instantiate(parCollision, colevents[i].intersection, Quaternion.LookRotation(colevents[i].normal));
         }
 
         /*if (other.gameObject.tag == "Interruptor")

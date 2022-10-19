@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class Movement : MonoBehaviour
 {
     private GameMaster gm;
+    public ParticleSystem movementPart;
     public Fludd fld;
     public Health health;
     public bool canDash = true;
@@ -115,6 +116,8 @@ public class Movement : MonoBehaviour
             currentMovement.x = currentMovementInput.x * 12.0f;
             currentMovement.z = currentMovementInput.y * 12.0f;
             isMovementPressed = currentMovementInput.x != 0 || currentMovementInput.y != 0;
+            movementPart.Play();
+
         }
         else
         {
@@ -122,6 +125,7 @@ public class Movement : MonoBehaviour
             currentMovement.x = currentMovementInput.x * 6.0f;
             currentMovement.z = currentMovementInput.y * 6.0f;
             isMovementPressed = currentMovementInput.x != 0 || currentMovementInput.y != 0;
+            movementPart.Stop();
         }
        
         
@@ -248,6 +252,18 @@ public class Movement : MonoBehaviour
             script.GetComponent<Fludd>().enabled = true;
             haveFluud = true;
             Destroy(other.gameObject);
+            fld.fWater = 100f;
+            fld.WI.SetWater(fld.fWater);
+
+        }
+        if (other.gameObject.tag == "Heart")
+        {
+            fHealth += 100f;
+            health.SetHealth(fHealth);
+            Destroy(other.gameObject);
+        }
+        if (other.gameObject.tag == "End")
+        {
 
         }
     }
